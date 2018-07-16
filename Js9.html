@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+<html>  
+<head> 
+  <meta charset="utf-8">  
+<title>ass_20171124115350</title>  
+</head>  
+<body>  
+  
+</body>  
+<script>
+ function createNewString(str)
+{
+  if (str.length >= 3) {
+    result_str = str.substring(str.length - 3);
+    return result_str + result_str + result_str + result_str;
+  }
+  else
+    return false;
+}
+console.log(createNewString("Python 3.0"));
+console.log(createNewString("JS"));
+console.log(createNewString("JavaScript"));
+</script>
+</html> 

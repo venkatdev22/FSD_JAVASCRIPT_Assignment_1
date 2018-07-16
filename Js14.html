@@ -1,0 +1,23 @@
+<!DOCTYPE html>  
+<html>  
+<head> 
+  <meta charset="utf-8">  
+<title>ass_20171124115350</title>  
+</head>  
+<body>  
+  
+</body>  
+<script>
+ function makeid(l)
+{
+var text = "";
+var char_list = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+for(var i=0; i < l; i++ )
+{  
+text += char_list.charAt(Math.floor(Math.random() * char_list.length));
+}
+return text;
+}
+console.log(makeid(8));
+</script>
+</html> 

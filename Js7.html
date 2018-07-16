@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html>  
+<head> 
+  <meta charset="utf-8">  
+<title>ass_20171124115350</title>  
+</head>  
+<body>  
+  
+</body>  
+<script> 
+ var texts = prompt('Enter a string');
+ var textArray=texts.split(" "); 
+ for(var i=0 ; i< textArray.length; i++)
+ {  
+        var my_array = textArray[i].split(''); 
+        my_array.splice(0, 1, my_array[0].toUpperCase());  
+        textArray.splice(i,1,my_array.join(''));       
+ } 
+ alert(textArray.join(' ')); 
+ console.log(textArray.join(' ')); 
+</script>
+</html> 

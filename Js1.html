@@ -1,0 +1,38 @@
+ <!DOCTYPE html>  
+ 	<html>  
+ 	<head> 
+ 	  <meta charset="utf-8">  
+  <title>ass_20171124115350</title>  
+ </head>  
+ <body>  
+ 
+    <p>Today is : <span id="day"></span></p> 
+    <p>Current time is : <span id="time"></span></p>
+  
+ </body>  
+ <script>
+ var d = new Date();
+var weekday = new Array(7);
+weekday[0] =  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var currentDay = weekday[d.getDay()];
+document.getElementById('day').innerHTML=currentDay;
+
+var currentHour=d.getHours();
+var ampm = "AM";
+if( currentHour > 12 ) {
+    currentHour -= 12;
+    ampm = "PM";
+} 
+currentHour  =currentHour +" "+ ampm;  
+var currentTime=currentHour +" : "+ d.getMinutes()+" : "+d.getSeconds(); 
+document.getElementById('time').innerHTML=currentTime;
+  
+</script>
+ 	</html> 

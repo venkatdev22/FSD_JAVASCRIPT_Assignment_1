@@ -1,0 +1,20 @@
+<!DOCTYPE html>  
+<html>  
+<head> 
+  <meta charset="utf-8">  
+<title>ass_20171124115350</title>  
+</head>  
+<body>  
+  
+</body>  
+<script>
+ function findLongestWord(str) {
+  const stringArray = str.split(" ");
+  const orderedArray = stringArray.sort((a, b) => {
+    return a.length < b.length;
+  });
+  return orderedArray[0];
+}
+console.log(findLongestWord("Web Development Tutorial"));
+</script>
+</html> 
